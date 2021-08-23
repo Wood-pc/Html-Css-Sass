@@ -1,0 +1,54 @@
+@mixin button{
+    font: {
+        size:1.0625em;
+       family: $font-family-sans;
+    }
+    color:$color-text ;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 2.125em 0;
+    padding: 1.25em 1.5em;
+    border-radius: 0.375em;
+}
+.btn-default{
+
+    @include button;
+    background-color: #8c95ad;
+
+    &:hover ,
+    &:focus {
+        background-color: darken(#8c95ad,20%);
+    }
+}
+.btn-yellow{
+
+    @include button;
+    background-color: grey;
+
+    &:hover ,
+    &:focus {
+        background-color: darken(grey,20%);
+    }
+}
+.btn-red{
+
+    @include button;
+    background-color: red;
+
+    &:hover ,
+    &:focus {
+        background-color: darken(red,20%);
+    }
+}
+.btn-green{
+
+    @include button;
+    background-color: green;
+
+    &:hover ,
+    &:focus {
+        background-color: darken(green,20%);
+    }
+}

@@ -1,0 +1,31 @@
+
+.pre-footer {
+	background: lighten($color-bg-body, 3%);
+	padding: em(68) 0 em(72);
+
+	p {
+		color: darken( $color-text, 10% );
+		font-size: em(18);
+		line-height: em(28, 18);
+		margin: em(28, 18) 0 em(30, 18);
+	}
+	.btn{
+		margin: 0;
+		font-size: 85%;
+	}
+}
+.site-footer{
+	color:$color-footer;
+	padding: em(30) 0;
+	a,span{
+		color:transparentize($color-footer , $amount: .5)
+	}
+	a{
+	border-bottom: 1px solid darken($color-footer,30%);
+	}
+	
+	span{
+         padding-left: em(16);
+	}
+	
+}

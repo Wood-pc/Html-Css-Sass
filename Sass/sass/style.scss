@@ -1,0 +1,189 @@
+@import "variables";
+@import "mixins";
+@import "buttons";
+@import "functions";
+@import "home";
+@import "gallery";
+@import "contact";
+@import "blog";
+@import "header";
+@import "footer";
+
+
+
+
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+/*footer,aside,
+.content >:not(h1){
+display: none;
+}*/
+img{
+    width: 100%;
+    max-width: 100%;
+    
+    border-radius: 0.5em 0.5em 0 0;
+    
+    
+}
+
+
+
+body{
+    color: $color-text;
+    background-color: $color-bg-body;
+    text-align: center;
+    margin: 0;
+    
+
+    font: {
+        size: $font-size-base;
+     family:$font-family-sans;
+     weight: normal;
+    }
+}
+a{
+    color: $color-text;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+}
+h1{
+    font-size: em(75);
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+.menu{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+        li,a{
+             display: inline-block;
+            }
+    }
+
+nav{
+background: #fff;
+     a {
+     color: $color-muted;
+     font-size: em(13);
+     padding: em(24) em(8);
+     
+
+            &:focus,
+            &:hover{
+                color:lighten($color-muted,20%);
+                   }
+       }
+   }
+   main{
+       background-color: $gallery;
+       border-top: em(1) solid black;
+       
+           .contact &{
+               background:$contact ;
+               border-color: darken($contact,10%);
+           }
+           .blog &{
+            background:$blog ;
+            border-color: darken($blog,10%);
+           }
+
+           .home &{
+            background:$home ;
+            border-color: darken($home,10%);
+           }
+           .buttons &{
+            background:$buttons ;
+            border-color: darken($buttons,10%);
+           }
+
+
+           
+       
+       }
+   .content{
+       padding: {
+             top:em(80);
+             bottom:em(80);
+       }
+   }
+.shadow{
+    .home &{text-shadow: em(2) em(2)  em(2) darken($home,20%);}
+    
+    
+     .blog & {
+        text-shadow: em(2) em(2)  em(2)  darken($blog,20%);
+    }
+    .contact &{
+        text-shadow: em(2) em(2)  em(2)  darken($contact,20%);
+    }
+     .gallery &{
+        text-shadow: em(2) em(2)  em(2)  darken($gallery,20%);
+    }
+    .buttons &{
+        text-shadow: em(2) em(2)  em(2)  darken($buttons,20%);
+    }
+    
+}
+
+.active a{
+    .home &{color: darken($home,20%);}
+    
+    
+     .blog & {
+        color:  darken($blog,20%);
+    }
+    .contact &{
+        color:  darken($contact,20%);
+    }
+     .gallery &{
+        color:  darken($gallery,20%);
+    }
+    .buttons &{
+        color:  darken($buttons,20%);
+    }
+    
+}
+.container{
+    @include container(em(1024));
+    padding:0 em(16);
+    
+}
+.image-grid{
+    @include clearfix;
+    img{
+        float: left;
+        width: 49%;
+        margin: .5%;
+        margin-bottom: 0;
+      
+        
+    }
+}
+
+ .buttons main{
+    background-color: hotpink
+
+}
+.buttons h1{
+   
+    background: $buttons;
+  
+   
+}
+.buttons .container{
+    padding-bottom: em(50);
+}
+.bigass{
+    margin-bottom: em(-4);
+    border-radius: 0.5em 0.5em 0 0;
+}
+@include selection{
+background-color: #fcbd24;
+color: #fff;
+}

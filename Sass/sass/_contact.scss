@@ -1,0 +1,38 @@
+.contact-form{
+    max-width: em(560);
+    margin: em(72) auto 0;
+    text-align: left;
+    label{
+        font-size: em(17);
+        margin-bottom: em(22);
+        display: block;
+    }
+    .btn{
+        font-size: 130%;
+        margin-top: 0;
+        margin-bottom: 2em;
+        padding: {
+         left:2.5em ;
+         right:2.5em ;
+         
+        }
+    }
+}
+input,textarea{
+    color: $color-text;
+    font{
+        size:em(14);
+     
+    }
+
+    border:2px solid rgba(black ,0.1);
+    background-color:rgba(white ,0.05);
+    outline:none;
+
+    padding:em(10);
+    margin-top: em(6);
+
+    display: block;
+    max-width:100% ;
+    width: 100%;
+}
