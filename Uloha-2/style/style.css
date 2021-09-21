@@ -1,0 +1,52 @@
+
+body {
+    color: #444;
+    font-family: Montserrat;
+    background: #eee;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+h1 {
+     margin: 0 0 20px; 
+     color: #46627f;
+
+}
+table {
+    color: #fff;
+    background: #34495E;
+  
+    border-radius: 8px;
+    display: inline-block;
+}
+thead th {
+    text-transform: capitalize;
+}
+th, td {
+    padding: 16px 18px;
+    border-bottom: 2px solid #46627f;
+    border-left: 2px solid #46627f;
+}
+
+
+
+
+.txt {
+    color: #dd5;
+   
+   
+    
+    font-weight: bold;
+}
+tfoot td {
+    
+    border: none;
+}
+.odd {
+    background-color: #40576E;
+}
+.fail{
+    color: white;
+    font-weight: bold;
+}
+
